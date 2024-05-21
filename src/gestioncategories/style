@@ -1,0 +1,20 @@
+.title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.exit-button {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+.cancel-button {
+    -fx-background-color: grey;
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-background-radius: 5;
+    -fx-padding: 8 15 8 15;
+    -fx-font-size: 14px;
+}

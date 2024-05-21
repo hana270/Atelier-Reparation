@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="facturation.FacturationController">
+        
+
+        <TableView fx:id="ordresTable" prefHeight="360.0" prefWidth="560.0">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID"/>
+                <TableColumn fx:id="appareilColumn" text="Appareil"/>
+                <TableColumn fx:id="descriptionColumn" text="Description du problème"/>
+                <TableColumn fx:id="hoursColumn" text="Nb. heures de main d'œuvre"/>
+                <TableColumn text="Prix Total" fx:id="totalPriceColumn"/>
+            </columns>
+        </TableView>
+
+        
+        </VBox>

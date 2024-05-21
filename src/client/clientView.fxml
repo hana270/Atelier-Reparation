@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="328.0" prefWidth="676.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="client.ClientController">
+   <ImageView fitHeight="322.0" fitWidth="463.0" layoutX="-65.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/image3.jpg" />
+      </image>
+   </ImageView>
+    <Button layoutX="400.0" layoutY="178.0" onAction="#demandeReparation" text="Demande de Réparation" textAlignment="CENTER" textFill="#ab6527">
+      <font>
+         <Font name="Brush Script MT Italic" size="22.0" />
+      </font></Button>
+    <Button layoutX="400.0" layoutY="243.0" onAction="#consulterMesDemandes" text="Consulter Mes Demandes" textFill="#ab6527">
+      <font>
+         <Font name="Brush Script MT Italic" size="21.0" />
+      </font></Button>
+   <Label layoutX="333.0" layoutY="65.0" prefHeight="25.0" prefWidth="336.0" text=" client. Vous pouvez consulter et envoyer">
+      <font>
+         <Font name="Cambria Italic" size="17.0" />
+      </font>
+   </Label>
+   <Label layoutX="313.0" layoutY="100.0" text=" des demandes dans notre atelier de réparation.">
+      <font>
+         <Font name="Cambria Italic" size="17.0" />
+      </font>
+   </Label>
+    <Label fx:id="welcomeLabel" layoutX="412.0" layoutY="22.0" prefHeight="35.0" prefWidth="209.0" text="Bienvenue">
+      <font>
+         <Font name="Britannic Bold" size="33.0" />
+      </font></Label>
+</AnchorPane>

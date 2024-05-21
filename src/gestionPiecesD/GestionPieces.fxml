@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="547.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionPiecesD.GestionPiecesController">
+    <TextField fx:id="descriptionField" layoutX="42.0" layoutY="77.0" prefHeight="32.0" prefWidth="206.0" promptText="Description" />
+    <TextField fx:id="prixHTField" layoutX="42.0" layoutY="116.0" prefHeight="32.0" prefWidth="206.0" promptText="Prix HT" />
+    
+    <Button layoutX="62.0" layoutY="151.0" onAction="#handleAjouterPiece" prefHeight="38.0" prefWidth="83.0" text="Ajouter" AnchorPane.bottomAnchor="350.0" />
+    <Button layoutX="185.0" layoutY="151.0" onAction="#handleModifierPiece" prefHeight="38.0" prefWidth="83.0" text="Modifier" AnchorPane.bottomAnchor="350.0" />
+    <Button layoutX="302.0" layoutY="151.0" onAction="#handleSupprimerPiece" prefHeight="38.0" prefWidth="83.0" text="Supprimer" AnchorPane.bottomAnchor="350.0" />
+    <Button layoutX="434.0" layoutY="151.0" onAction="#handleQuitter" prefHeight="38.0" prefWidth="83.0" style="-fx-font-size: 14px; -fx-background-color: #ff6666;" text="Quitter" AnchorPane.bottomAnchor="350.0" />
+    
+    <TableView fx:id="piecesTable" layoutX="-1.0" layoutY="204.0" onMouseClicked="#handlePieceSelection" prefHeight="319.0" prefWidth="660.0" AnchorPane.bottomAnchor="-1.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="93.0" text="ID" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="327.0" text="Description" />
+            <TableColumn fx:id="prixHTColumn" prefWidth="239.0" text="Prix HT" />
+        </columns>
+    </TableView>
+   <Label layoutX="185.0" layoutY="14.0" text="Liste des pieces detachées" AnchorPane.bottomAnchor="483.0" AnchorPane.topAnchor="10.0">
+      <font>
+         <Font name="Britannic Bold" size="27.0" />
+      </font>
+      <padding>
+         <Insets bottom="10.0" />
+      </padding>
+   </Label>
+</AnchorPane>

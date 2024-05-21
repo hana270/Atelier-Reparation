@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demandereparationclient.ClientDemandesController">
+    <children>
+      <Label text="Les Demandes de Reaparation " textFill="#510909">
+         <font>
+            <Font name="Britannic Bold" size="26.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="30.0" left="150.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+        <HBox spacing="10">
+            <Button onAction="#modifierDemande" prefHeight="40.0" prefWidth="112.0" text="Modifier" textFill="#3c0606">
+            <HBox.margin>
+               <Insets bottom="10.0" left="200.0" top="30.0" />
+            </HBox.margin>
+            <font>
+               <Font size="18.0" />
+            </font>
+            <effect>
+               <DropShadow />
+            </effect>
+         </Button>
+            <Button onAction="#supprimerDemande" prefHeight="40.0" prefWidth="110.0" text="Supprimer" textFill="#4a0606">
+            <HBox.margin>
+               <Insets left="50.0" top="30.0" />
+            </HBox.margin>
+            <font>
+               <Font size="18.0" />
+            </font>
+            <effect>
+               <DropShadow />
+            </effect>
+         </Button>
+        </HBox>
+        <TableView fx:id="tableDemandes" prefWidth="702.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="100" text="ID Demande" />
+                <TableColumn fx:id="colDescription" prefWidth="300" text="Description" />
+                <TableColumn fx:id="colStatut" prefWidth="150" text="Statut" />
+                <TableColumn fx:id="colDateDemande" prefWidth="150" text="Date Demande" />
+            </columns>
+        </TableView>
+    </children>
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+</VBox>

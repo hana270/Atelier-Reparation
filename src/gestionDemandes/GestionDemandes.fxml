@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="429.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionDemandes.GestionDemandesController">
+    <children>
+      <Label text="Liste des demandes">
+         <font>
+            <Font name="Britannic Bold" size="28.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" left="250.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+       <TableView fx:id="tableDemandes" editable="true">
+    <columns>
+        <TableColumn fx:id="colId" prefWidth="100.0" text="ID Demande" />
+        <TableColumn fx:id="colClientNom" prefWidth="150.0" text="Nom du Client" />
+        <TableColumn fx:id="colAppareilDescription" prefWidth="200.0" text="Description de l'Appareil" />
+        <TableColumn fx:id="colStatut" editable="true" prefWidth="150.0" text="Statut" />
+        <TableColumn fx:id="colDateDemande" prefWidth="150.0" text="Date Demande" />
+     <TableColumn fx:id="colDescription" prefWidth="100" text="Description" />
+    </columns>
+</TableView>
+
+    </children>
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+</VBox>
